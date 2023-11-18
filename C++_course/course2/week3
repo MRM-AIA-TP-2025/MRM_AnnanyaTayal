@@ -1,0 +1,123 @@
+1. Exercise 1
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+  
+  string my_string = (argv[1]);
+  
+  //add code below this line
+
+cout<< my_string.at(0) << " is the first character and " << my_string.at((my_string.length())-1) << " is the last character";
+
+
+  //add code above this line
+  
+  return 0;
+  
+}
+
+2. Exercise 2
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+  
+  string my_string = (argv[1]);
+  
+  //add code below this line
+
+for (int i=0; i< my_string.length(); i++)
+  {
+    for (int j=0; j< my_string.length(); j++)
+    {
+      cout << my_string;
+    }
+    cout << endl;
+  }
+
+  //add code above this line
+  
+  return 0;
+  
+}
+
+3. Exercise 3
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+  
+  string original = (argv[1]);
+  string modified;
+  char ch;
+  
+  //add code below this line
+
+for (char ch : original) {
+  if (isupper(ch)) {
+    modified += 'u';
+  }
+  else if (islower(ch)) {
+    modified += 'l';
+  }
+  else {
+    modified += '-';
+  }
+}
+
+  //add code above this line
+  
+  return 0;
+  
+}
+
+4. Exercise 4
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+  
+  string my_string = (argv[1]);
+  
+  //add code below this line
+
+if (my_string.length() % 2 == 0) {
+    cout << my_string.substr(0,my_string.length()/2) << endl;
+    cout << my_string.substr(my_string.length()/2) << endl;
+  } else {
+   
+    cout << my_string.substr(0, my_string.length()/2) << endl;
+    cout << my_string.substr(my_string.length()/2) << endl;
+  }
+
+  //add code above this line
+  
+  return 0;
+  
+}
+
+5. Exercise 5
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+  
+  string my_string = (argv[1]);
+  
+  //add code below this line
+
+for (int i = 0; i < my_string.length(); i++) {
+  if (i % 2 == 0) {
+    cout << my_string.at(i + 1);
+  }
+  else {
+    cout << my_string.at(i - 1);
+  }
+}
+
+  //add code above this line
+  
+  return 0;
+  
+}
